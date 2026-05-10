@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc -b",
-    "dev": "npm run build && npm run start",
-    "start": "node dist/index.js"
+    "build": "node init && tsc -b",
+    "dev": "node init && npm run build && npm run start",
+    "start": "node init && node dist/index.js"
   },
   "dependencies": {
     "@repo/prisma": "workspace:*",
